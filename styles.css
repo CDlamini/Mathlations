@@ -11,12 +11,11 @@ footer {
   background-color: #f1f1f1;
   padding: 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Distribute items horizontally */
 }
 
 nav {
-  display: flex;
-  border: 1px solid #ccc; /* Add border to the entire navigation */
+  display: flex;  /* Keep this line */
 }
 
 nav ul {
@@ -25,10 +24,12 @@ nav ul {
   margin: 0;
 }
 
+/* Style the list items (li) for horizontal alignment */
 nav li {
-  margin-right: 1rem;
-  border-right: 1px solid #ccc; /* Add border between menu items */
+  display: inline-block; /* Make list items behave inline */
+  margin-right: 1rem; /* Add spacing between items */
   padding: 0.5rem 1rem; /* Add padding for better spacing */
+  border-right: 1px solid #ccc; /* Add border between menu items (optional) */
 }
 
 a {
@@ -46,16 +47,16 @@ a:hover {
     font-size: 0.8rem;
   }
   nav li {
-    margin-right: 0.5rem;
+    padding: 0.3rem 0.5rem; /* Adjust padding on smaller screens */
   }
 }
 
 /* Randomize colors on page load (commented out) */
-body {
+/* body {
   animation: randomColor 5s infinite ease-in-out;
 }
 
 @keyframes randomColor {
   from { background-color: hsl(0, 100%, 80%); }
-  to { background-color: hsl(360deg, 100%, 80%); }
-} 
+  to { background-center: hsl(360deg, 100%, 80%); }
+} */
