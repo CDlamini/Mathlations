@@ -1,22 +1,3 @@
-// Simple animation example (unchanged)
-const element = document.querySelector('body');
-
-element.addEventListener('mouseover', () => {
-  element.classList.add('animate');
-});
-
-element.addEventListener('mouseout', () => {
-  element.classList.remove('animate');
-});
-
-// Add the animation class (unchanged)
-element.classList.add('animate');
-
-// Remove the animation class after a short delay (unchanged)
-setTimeout(() => {
-  element.classList.remove('animate');
-}, 1000);
-
 const gameContainer = document.getElementById('game-container');
 const startGameButton = document.getElementById('start-game');
 const checkAnswerButton = document.getElementById('check-answer');
@@ -29,6 +10,7 @@ let score = 0;
 startGameButton.addEventListener('click', () => {
   gameContainer.style.display = 'block'; // Show game screen
   generateProblem(); // Generate the first problem
+  startGameButton.style.display = 'none'; // Hide start game button
 });
 
 checkAnswerButton.addEventListener('click', () => {
