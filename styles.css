@@ -1,112 +1,75 @@
-body {
-  margin: 0;
-  font-family: sans-serif;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #f1f1f1;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between; /* Distribute items horizontally */
-}
-
-nav {
-  display: flex;  /* Keep this line */
-}
-
-nav ul {
-  list-style: none; /* Remove bullets */
-  padding: 0;
-  margin: 0;
-}
-
-/* Style the list items (li) for horizontal alignment */
-nav li {
-  display: inline-block; /* Make list items behave inline */
-  margin-right: 1rem; /* Add spacing between items */
-  padding: 0.5rem 1rem; /* Add padding for better spacing */
-  border-right: 1px solid #ccc; /* Add border between menu items (optional) */
-}
-
-a {
-  text-decoration: none;
-  color: blue; /* Set default color to blue */
-}
-
-a:hover {
-  color: #007bff; /* Change color on hover */
-}
-
-/* Add some responsiveness */
-@media (max-width: 768px) {
-  footer {
-    font-size: 0.8rem;
-  }
-  nav li {
-    padding: 0.3rem 0.5rem; /* Adjust padding on smaller screens */
-  }
-}
-
-/* Randomize colors on page load (commented out) */
-/* body {
-  animation: randomColor 5s infinite ease-in-out;
-}
-
-@keyframes randomColor {
-  from { background-color: hsl(0, 100%, 80%); }
-  to { background-center: hsl(360deg, 100%, 80%); }
-} */
-
-/* Style the game container */
+/* Style the game container for a playful look */
 #game-container {
-  width: 80%; /* Adjust width as needed */
+  width: 70%; /* Adjust width as needed */
   margin: 0 auto; /* Center horizontally */
   padding: 2rem; /* Add some padding */
-  border: 2px solid #ddd; /* Optional border */
-  border-radius: 10px; /* Rounded corners */
-  background-color: #f5f5f5; /* Light background color */
+  border: 5px solid #ffcc99; /* Colorful border */
+  border-radius: 15px; /* Rounded corners */
+  background-color: #f8f8ff; /* Light background color with a hint of blue */
   text-align: center; /* Center text within the container */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
 }
 
-/* Style the heading for a playful look */
+/* Style the heading for a big and friendly look */
 #game-container h1 {
-  font-family: 'Aclonica', cursive; /* Fun and colorful font */
-  font-size: 2rem; /* Increase heading size */
-  color: #3399ff; /* Blue color */
+  font-family: 'Bubblegum Sans', cursive; /* Fun and colorful font */
+  font-size: 3rem; /* Increase heading size */
+  color: #ff9933; /* Orange color */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Slight text shadow */
 }
 
 /* Style the paragraph for better readability */
 #game-container p {
   font-family: Arial, sans-serif; /* Clear and readable font */
-  font-size: 1.2rem; /* Increase paragraph size slightly */
+  font-size: 1.4rem; /* Increase paragraph size slightly */
   margin-bottom: 1rem; /* Add some space after the paragraph */
+  color: #333; /* Darker text color for better contrast */
 }
 
-/* Style the game area to be visually distinct */
+/* Style the problem area for visual distinction */
 #game-area {
-  background-color: #eee; /* Light gray background */
+  background-color: #e0ffff; /* Light blue background */
   padding: 1rem; /* Add some padding */
-  border-radius: 5px; /* Rounded corners */
+  border-radius: 10px; /* Rounded corners */
   margin-bottom: 1rem; /* Add space before the button */
+  font-size: 1.2rem; /* Increase font size slightly */
 }
 
-/* Style the start game button */
-#start-game {
+#game-area p {
+  margin-bottom: 0.5rem; /* Reduce space between problem and answer elements */
+}
+
+/* Style the input field for a playful look */
+#answer {
+  font-family: Arial, sans-serif; /* Clear and readable font */
+  font-size: 1.2rem; /* Adjust font size */
+  padding: 0.5rem 1rem; /* Add padding for better input area */
+  border: 2px solid #ffcc99; /* Colorful border */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Style the check answer button */
+#check-answer {
   font-family: Arial, sans-serif; /* Clear and readable font */
   font-size: 1rem; /* Adjust button font size */
   padding: 0.8rem 2rem; /* Add padding for better button size */
-  background-color: #4CAF50; /* Green color */
+  background-color: #99ff99; /* Green color */
   color: white; /* White text */
   border: none; /* Remove default button border */
   border-radius: 5px; /* Rounded corners */
   cursor: pointer; /* Indicate clickable behavior */
+  margin-top: 0.5rem; /* Add some space above the button */
 }
 
 /* Add hover effect for the button (optional) */
-#start-game:hover {
-  background-color: #3e8e41; /* Darker green on hover */
+#check-answer:hover {
+  background-color: #66ff66; /* Darker green on hover */
+}
+
+/* Style the score element for easy visibility */
+#score {
+  font-size: 1.5rem; /* Increase font size for score */
+  font-weight: bold; /* Make score text bolder */
+  color: #990000; /* Red color for score */
 }
