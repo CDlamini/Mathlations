@@ -77,3 +77,22 @@
   color: #990000; /* Red color for score */
   margin-top: 1rem; /* Add some space above the score */
   margin: 0 auto; /* Center horizontally within the container */
+
+  /* Style the start game button for a bold and impactful look */
+#start-game {
+  font-family: 'Shonen Jump', sans-serif; /* Replace with a bold font (if available) */
+  font-size: 1.5rem; /* Increase font size */
+  padding: 1rem 2rem; /* Add padding for better button size */
+  background-color: #e60000; /* Red color */
+  color: white; /* White text */
+  border: none; /* Remove default button border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Indicate clickable behavior */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add slight text shadow */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow effect */
+}
+
+/* Add hover effect for the button (optional) */
+#start-game:hover {
+  background-color: #c00000; /* Darker red on hover */
+}
