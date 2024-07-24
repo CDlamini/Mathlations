@@ -79,8 +79,8 @@
   margin: 0 auto; /* Center horizontally within the container */
 
   /* Style the start game button for a bold and impactful look */
-#start-game {
-  font-family: 'Shonen Jump', sans-serif; /* Replace with a bold font (if available) */
+.start-game {
+  font-family: ', sans-serif'; /* Replace with a bold font (if available) */
   font-size: 1.5rem; /* Increase font size */
   padding: 1rem 2rem; /* Add padding for better button size */
   background-color: #e60000; /* Red color */
