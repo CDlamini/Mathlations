@@ -1,4 +1,10 @@
 /* Style the game container for a playful look */
+.start-game{
+ position: relative;
+ height: fit-content;
+ width: fit-content;
+
+}
 #game-container {
   width: 70%; /* Adjust width as needed */
   margin: 0 auto; /* Center horizontally */
