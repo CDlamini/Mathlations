@@ -1,101 +1,71 @@
-/* Style the game container for a centralized and playful look */
-#game-container {
-  width: 80%; /* Adjust width as needed */
-  margin: 5rem auto; /* Center horizontally and vertically with some top and bottom margin */
-  padding: 2rem; /* Add some padding */
-  border: 5px solid #ffcc99; /* Colorful border */
-  border-radius: 15px; /* Rounded corners */
-  background-color: #f8f8ff; /* Light background color with a hint of blue */
-  text-align: center; /* Center text within the container */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-}
-
-/* Style the heading for a big and friendly look, centered within the container */
-#game-container h1 {
-  font-family: 'Open Sans', sans-serif; /* Friendly and readable font */
-  font-size: 3rem; /* Increase heading size */
-  color: #ff9933; /* Orange color */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Slight text shadow */
-  margin-bottom: 1rem; /* Add some space after the heading */
-}
-
-/* Style the paragraphs for better readability, centered within the container */
-#game-container p {
-  font-family: Arial, sans-serif; /* Clear and readable font */
-  font-size: 1.4rem; /* Increase paragraph size slightly */
-  margin-bottom: 1rem; /* Add some space after the paragraph */
-  color: #333; /* Darker text color for better contrast */
-}
-
-/* Style the game area for visual distinction, centered within the container */
-#game-area {
-  background-color: #e0ffff; /* Light blue background */
-  padding: 1rem; /* Add some padding */
-  border-radius: 10px; /* Rounded corners */
-  margin-bottom: 1rem; /* Add space before the button */
-  font-size: 1.2rem; /* Increase font size slightly */
-  margin: 0 auto; /* Center horizontally within the container */
-}
-
-#game-area p {
-  margin-bottom: 0.5rem; /* Reduce space between problem and answer elements */
-}
-
-/* Style the input field for a playful look */
-#answer {
-  font-family: Arial, sans-serif; /* Clear and readable font */
-  font-size: 1.2rem; /* Adjust font size */
-  padding: 0.5rem 1rem; /* Add padding for better input area */
-  border: 2px solid #ffcc99; /* Colorful border */
-  border-radius: 5px; /* Rounded corners */
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-}
-
-/* Style the check answer button */
-#check-answer {
-  font-family: Arial, sans-serif; /* Clear and readable font */
-  font-size: 1rem; /* Adjust button font size */
-  padding: 0.8rem 2rem; /* Add padding for better button size */
-  background-color: #99ff99; /* Green color */
-  color: white; /* White text */
-  border: none; /* Remove default button border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Indicate clickable behavior */
-  margin-top: 0.5rem; /* Add some space above the button */
-  margin: 0 auto; /* Center horizontally within the container */
-}
-
-/* Add hover effect for the button (optional) */
-#check-answer:hover {
-  background-color: #66ff66; /* Darker green on hover */
-}
-
-/* Style the score element for easy visibility */
-#score {
-  font-size: 1.5rem; /* Increase font size for score */
-  font-weight: bold; /* Make score text bolder */
-  color: #990000; /* Red color for score */
-  margin-top: 1rem; /* Add some space above the score */
-  margin: 0 auto; /* Center horizontally within the container */
-
-   #start-game{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Arial Black', sans-serif; /* Bold system font */
-    font-size: 1.5rem; /* Increase font size */
-    padding: 1rem 2rem; /* Add padding for better button size */
-    background-color: #e60000; /* Red color */
-    color: white; /* White text */
-    border: none; /* Remove default button border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Indicate clickable behavior */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add slight text shadow */
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow effect */
-  }
+body {background-color: #f0f0f0;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
   
-  /* Add hover effect for the button (optional) */
-  #start-game:hover {
-    background-color: #c00000; /* Darker red on hover */
-  }
+}
+
+#game {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.number {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.number.correct {
+  background-color: #28a745;
+}
+
+.number.incorrect {
+  background-color: #dc3545;
+}
+
+.target {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.result {
+  font-size: 24px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.button:hover {
+  background-color: #0069d9;
+}
