@@ -1,71 +1,55 @@
-body {background-color: #f0f0f0;
-  font-family: 'Arial', sans-serif;
+body {
+  background-color: black;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   height: 100vh;
   margin: 0;
-  
 }
 
-#game {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+#game-container {
+  width: 400px;
+  height: 400px;
+  border: 2px solid white;
+  position: relative;
 }
 
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #333;
+#maze {
+  width: 100%;
+  height: 100%;
+  background-image: url('maze.png'); /* Replace with your maze image */
+  background-size: cover;
 }
 
-.number {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #007bff;
-  color: #fff;
-  font-size: 24px;
-  text-align: center;
-  line-height: 50px;
-  margin: 10px;
-  cursor: pointer;
+#spaceship {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url('spaceship.png'); /* Replace with your spaceship image */
+  background-size: contain;
 }
 
-.number.correct {
-  background-color: #28a745;
+#question {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-size: 20px;
 }
 
-.number.incorrect {
-  background-color: #dc3545;
+#answer-buttons {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
 }
 
-.target {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.result {
-  font-size: 24px;
-  margin-top: 10px;
-  color: #333;
-}
-
-.button {
-  background-color: #007bff;
-  color: #fff;
+.answer-button {
+  background-color: white;
+  color: black;
   border: none;
   padding: 10px 20px;
-  border-radius: 5px;
   cursor: pointer;
-  font-size: 18px;
-}
-
-.button:hover {
-  background-color: #0069d9;
 }
